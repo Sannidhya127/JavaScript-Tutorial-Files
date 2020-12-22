@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions | Web Development</title>
+</head>
+
+<body>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio fugiat quod id culpa placeat natus consectetur ab deserunt provident aperiam.</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore recusandae id adipisci quod consequatur eaque! Sed sunt enim quod! Et est quos ab itaque, eos dolores deleniti asperiores odit ipsum, tempora molestias voluptas ipsa. Minus exercitationem
+        eum magni accusamus recusandae, nam aliquam reprehenderit voluptas deleniti culpa itaque iure voluptatibus laborum nihil ad. Commodi quis dolorum asperiores possimus, sit mollitia tenetur architecto ullam, voluptas hic et recusandae amet necessitatibus
+        consequatur eaque porro! Cum culpa nesciunt reprehenderit repudiandae! Explicabo doloremque recusandae repellendus ipsam aliquid. Consequuntur dolore provident necessitatibus expedita cum molestias pariatur quam ut, et libero officiis explicabo
+        repellendus, sint nesciunt quibusdam. Aspernatur accusamus optio molestiae architecto temporibus. Earum libero impedit sit beatae aut debitis molestias modi obcaecati. Quaerat exercitationem quae architecto ex perspiciatis aspernatur ut corrupti
+        doloremque accusamus ipsa rem perferendis voluptatum amet dignissimos, nesciunt pariatur dolorem aliquid tempora? Voluptates adipisci corrupti eius, rem praesentium vitae voluptas. Beatae quasi blanditiis corporis molestias minus ducimus in quos,
+        fuga velit, culpa necessitatibus quam dolorem dignissimos? Enim alias aut est molestias. Eum architecto blanditiis ex! Commodi quisquam, quaerat quod impedit ea fugiat, consectetur omnis nemo deleniti, maxime magnam ducimus aperiam modi suscipit
+        quas? Voluptatem, aliquid nemo rerum eligendi ducimus maxime magni, culpa, quibusdam recusandae qui sit minus numquam eum. Maxime itaque harum voluptatum molestias officia quidem quod nesciunt vel tenetur hic fugit maiores excepturi corrupti voluptates,
+        illum ex atque! Quo adipisci corporis laudantium, atque provident velit officiis quidem vitae expedita ut! Vel, optio provident? Nemo maxime, mollitia corrupti quae dolor saepe officiis? Quasi tenetur corrupti numquam accusantium id sapiente deserunt,
+        ea distinctio soluta quam? Vero iusto expedita ipsa assumenda accusantium minus iste labore, culpa consequuntur esse ipsum dolores blanditiis praesentium odio, ullam, maxime corrupti. Suscipit, unde totam? Mollitia ut dolorum optio impedit maxime
+        animi libero beatae recusandae aut aperiam, quibusdam numquam iure suscipit rem.</p>
+</body>
+<script>
+    var str = "This is string"
+        // var new = "this is text";
+    console.log(str);
+
+    var charset = 'charset [909][404] error code status[5678_677Image_hash_error]'
+        // First occurrence of a string
+    console.log(charset);
+    var post = str.indexOf('st');
+    console.log(post);
+
+    // Last occurrence of a string
+    post = str.lastIndexOf('is');
+    console.log(post);
+
+    //* Substing from a string
+    var slicer = str.slice(0, 5); // Can take negative values
+    var substrings = str.substring(0, 5); // Does not take negative values
+    var substrs = str.substr(0, 5); // Does not take negative values
+    console.log(substrs);
+    console.log(substrings);
+    console.log(slicer);
+
+    // replacing a part of the string
+    var replaced = str.replace('string', 'Harry');
+    console.log(replaced);
+
+
+    // Convertion in upper case or lower case
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+
+    // String concratination in a better way
+    var newstr = str.concat(' New String')
+    console.log(newstr);
+
+    // White spaces remover
+    var whitespacestr = '          this        string     contains spaces a lot               '
+    console.log(whitespacestr);
+    console.log(whitespacestr.trim());
+
+    // Extracting characters from a string
+
+    var char = str.charAt(5)
+    console.log(char)
+</script>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, If-else Conditionals & Switch Case in JavaScript | Web Development Tutorials</title>
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <br>
+            <input type="text" class="form-control" id="ohaka" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+</body>
+<script>
+    // let is always recommend instead of var
+
+
+    console.log("All working")
+    var string1 = 'This is a string'
+    console.log(string1)
+    let x = "this is block"
+    console.log(x)
+
+    {
+        let x = "This is a local variable"
+        console.log(x)
+    }
+    console.log(x)
+
+    const a = "This cannot be changed"
+    console.log(a)
+    let alpha = "You are applicable"
+    let L_alpha = "You are unapplicable"
+    let age = 5
+    if (age > 18) {
+        console.log(alpha)
+    } else if (age > 30) {
+        console.log("This is all")
+    } else {
+        console.log(L_alpha)
+    }
+    // let input = document.getElementById("ohaka")
+    // if (input > 18) {
+    //     console.log("You are good")
+    //         // document.getElementsById("emailHelp").innerHTML = 'thank you. tou are allowed'
+    // } else if (input < 18) {
+    //     console.log("You are bad")
+    //         // document.getElementsById("emailHelp").innerHTML = 'thank you. tou are not allowed'
+
+    // } else {
+    //     console.log("You are unknown")
+    // }
+
+    // Switch Case
+
+    // In switch case if break is not given all the satements will start running and destroy the server side code
+
+    const cups = "Hella"
+    switch (cups) {
+        case 4:
+            console.log("The value is 4")
+            break;
+        case 41:
+            console.log("The value is 41")
+            break;
+        case 42:
+            console.log("The value is 42")
+            break;
+        case "Hella":
+            console.log("The value is Hella")
+            break;
+
+        default:
+            console.log("The value is not rechable")
+            break;
+    }
+</script>
+
+</html>
